@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Întrebări Frecvente - Cadence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Antet -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="logo.png" alt="Cadence Logo">
+                <h1>Cadence</h1>
+            </div>
+            <div class="header-icons">
+                <a href="account.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <button class="burger-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="magazin.html">Magazin</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="despre.html">Despre Noi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secțiunea Principală -->
+    <main>
+
+        <!-- Banner FAQ -->
+        <section class="faq-hero">
+            <h1>Întrebări Frecvente</h1>
+        </section>
+
+        <!-- Întrebări Frecvente -->
+        <section class="faq-section">
+            <h2>Întrebări Frecvente</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">Trebuie să îmi creez un cont pentru a cumpăra?</h3>
+                    <p class="faq-answer">Nu este necesar, dar un cont facilitează comanda și urmărirea comenzilor.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Cum plasez o comandă?</h3>
+                    <p class="faq-answer">Adăugați produsele în coș, mergeți la finalizare și introduceți datele de livrare.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Cum pot plăti?</h3>
+                    <p class="faq-answer">Acceptăm carduri bancare și PayPal.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Cât durează livrarea?</h3>
+                    <p class="faq-answer">Livrarea durează între 2-5 zile lucrătoare.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Pot returna un produs?</h3>
+                    <p class="faq-answer">Da, aveți 14 zile pentru retur conform politicii noastre.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formular pentru Întrebări -->
+        <section class="ask-question">
+            <h2>Ai o întrebare? Scrie-ne!</h2>
+            <form id="questionForm">
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="question">Întrebare:</label>
+                <textarea id="question" name="question" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Trimite Întrebarea</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Subsol -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>Adresă: Washington Square, South New York, NY 10012</p>
+                <p>Telefon: (+877) 834-1434</p>
+                <p>Email: support@cadence.com</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Link-uri Utile</h3>
+                <ul>
+                    <li><a href="faq.html">Întrebări Frecvente</a></li>
+                    <li><a href="livrare-returnare.html">Livrare și retur</a></li>
+                    <li><a href="termeni.html">Termene și condiții</a></li>
+                    <li><a href="gdpr.html">Politica de confidențialitate</a></li>
+                    <li><a href="https://anpc.ro">ANPC</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Urmărește-ne pe</h3>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cadence. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

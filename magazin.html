@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin - Lumânări Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Antet -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="logo.png" alt="Cadence Logo">
+                <h1>Cadence</h1>
+            </div>
+            <div class="header-icons">
+                <a href="account.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <button class="burger-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="magazin.html">Magazin</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="despre.html">Despre Noi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secțiunea Principală -->
+    <main>
+        <!-- Titlu Magazin -->
+        <section class="store-title">
+            <h1>Magazin</h1>
+        </section>
+
+        <div class="store-container">
+            <!-- Filtre -->
+            <aside class="filters">
+                <h2>Filtrare Produse</h2>
+                <div class="filter-group">
+                    <label for="model">Model:</label>
+                    <select id="model">
+                        <option value="all">Toate</option>
+                        <option value="classic">Clasic</option>
+                        <option value="geometric">Geometric</option>
+                        <option value="ceramic">Ceramic</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="color">Culoare:</label>
+                    <select id="color">
+                        <option value="all">Toate</option>
+                        <option value="black">Negru</option>
+                        <option value="white">Alb</option>
+                        <option value="blue">Albastru</option>
+                        <option value="brown">Maro</option>
+                        <option value="orange">Portocaliu</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range">Preț:</label>
+                    <input type="range" id="price-range" min="0" max="100" value="50">
+                    <span id="price-value">$50</span>
+                </div>
+            </aside>
+
+            <!-- Lista de Produse -->
+            <section class="product-list">
+                <div class="product" data-model="ceramic" data-color="white" data-price="12">
+                   <a href="produs.html"><img src="prod1.webp" alt="Beagle Paw Ceramic Candle Warmer"></a>
+                    <h3>Beagle Paw Ceramic Candle Warmer</h3>
+                    <p class="price">$12.00</p>
+                    <button class="btn add-to-cart">Adaugă în Coș</button>
+                </div>
+                <div class="product" data-model="ceramic" data-color="white" data-price="21">
+                    <img src="prod2.webp" alt="White Ceramic Candle Holder Model">
+                    <h3>White Ceramic Candle Holder</h3>
+                    <p class="price">$21.00</p>
+                    <button class="btn add-to-cart">Adaugă în Coș</button>
+                </div>
+                <div class="product" data-model="ceramic" data-color="orange" data-price="20">
+                    <img src="prod3.webp" alt="Pumpkin Candle Ceramic Jar">
+                    <h3>Pumpkin Candle Ceramic Jar</h3>
+                    <p class="price">$20.00</p>
+                    <button class="btn add-to-cart">Adaugă în Coș</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Subsol -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>Adresă: Washington Square, South New York, NY 10012</p>
+                <p>Telefon: (+877) 834-1434</p>
+                <p>Email: support@cadence.com</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Link-uri Utile</h3>
+                <ul>
+                    <li><a href="faq.html">Întrebări Frecvente</a></li>
+                    <li><a href="livrare-returnare.html">Livrare și retur</a></li>
+                    <li><a href="termeni.html">Termene și condiții</a></li>
+                    <li><a href="gdpr.html">Politica de confidențialitate</a></li>
+                    <li><a href="https://anpc.ro">ANPC</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Urmărește-ne pe</h3>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cadence. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
